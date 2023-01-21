@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(https://wallpapercave.com/wp/pEeUsp1.jpg);
+	color: white;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+h1, h2, h3, legend {
+	text-shadow: 0px 0px 20px white;
+	font-family: 'Mukta', sans-serif;
+
+}
+
+p {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+aside {
+	flex-basis: 33%;
+}
+
+input {
+	margin: 0 0 1rem 0;
+	border-radius: 5px;
+	border: 1px white solid;
+	outline: none;
+
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+	color:#009117;
+	background-color:black;
+	border: 1px #424242 solid;
+	outline: none;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
+fieldset {
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding: 1.5 0 1rem 0;
+}
+
+label:not([type="radio"]), form p, select, [for="abtype"] {
+	display: block;
+	margin: 0 0 0.8rem 0;
+	font-weight: bold;
+}
+
+
+
+textarea {
+	height: 5rem;
+	width: 30rem;
+	padding: 1rem;
+	border-radius: 5px;
+	border: none;
+	margin: 0 0 2rem 0;
+	
+}
+
+
+button {
+	font-size: 1rem;
+	margin: 0 0 0 50rem;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+button:hover {
+	cursor:pointer; 
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+
+
+
+
+
