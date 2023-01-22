@@ -1,10 +1,16 @@
 @font-face {
-    font-family: 'nicoboldbold';
-    src: url('../fonts/nicobold-regular-webfont.woff2') format('woff2'),
-         url('../fonts/nicobold-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    	font-family: 'nicoboldbold';
+    	src: url('../fonts/nicobold-regular-webfont.woff') format('woff'),
+	 url('../fonts/nicobold-regular-webfont.woff2') format('woff2');
+    	font-weight: normal;
+	font-style: normal;
+}	
+@font-face {
+    font-family: 'nicoclean-monospaced';
+    src: url('../font/nicoclean-monospaced.woff') format('woff'),
+    	 url('../fonts/nicoclean-monospaced.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 html {
     box-sizing: border-box;
@@ -72,11 +78,11 @@ h1, h2, h3, h4, h5, h6 {
 .rightheader h1 {
 	font-size: 5rem;
 	color: #000;
-	text-shadow: 0px 0px 33px black;
 	text-align: center;
 }
 .rightheader p {
 	margin-top: -2.5rem;
+	font-family: 'nicoclean-monospaced';
 }
 
 /* nav+header+links */
