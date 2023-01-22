@@ -5,40 +5,66 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+   	font-family: 'Droid Serif', serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kavivanar', cursive;
-    font-weight: normal;
-}
-h2 {
-    font-size: 2rem;
-    color: #A51F10;
-    margin: 0;
-}
+
 
 .wrapper {
 	width: 80%;
-	margin: 0 auto;
+	margin: -1rem auto;
+	background:none;
+
+}
+
+.content {
+	position:relative;
+	animation: fadein 1s;
+}
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.abg {
+	min-width: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.abg > video {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1920px;
 }
 
 header {
 	display: flex;
-	justify-content: center;;
+	justify-content: center;
+	margin: 18rem 0rem -8rem 0rem;
 } 
+h1, h2, h3, h4, h5, h6 {
+    	font-family: 'Droid Serif', serif;
+    	font-weight: normal;
+}
+
 
 .rightheader {
-	margin: 2rem 0 0 1rem; 
+	margin: 0 auto;
+	text-align: center;
 }
 .rightheader h1 {
-	font-size: 3rem;
-	color: #db005c;
+	font-size: 5rem;
+	color: #000;
+	text-shadow: 0px 0px 33px black;
+	text-align: center;
 }
 .rightheader p {
 	margin-top: -2.5rem;
 }
 
-
+/* nav+header+links */
 
 a {
     color: #DA0090;
@@ -53,16 +79,23 @@ nav ul {
 	display: flex;
 	list-style-type: none;
 	padding: 0.5rem 0 0.5rem 0;	
-	border-bottom: 2px solid brown;
-	border-top: 2px solid pink;
+	border-bottom: 2px solid #e1e1e15e;
+	border-top: 2px solid #ffffff73;
 }
 nav a:hover {
     color: #DA0090;
 }
+nav {
+	background-color: #b0d2dd8f;
+	margin: 28rem 0rem 0rem 0rem;
+	text-shadow: 0px 4px 22px black;
+}
 
+/* main page content */
 
 section {
-	border-bottom: 1px #A51F10 solid;
+	border: 2px #2e2331 solid;
+	background-color: #2c1733ab;
 }
 section a:hover {
 	color: black;
@@ -73,6 +106,17 @@ section a:hover {
     color: #89A611;
 }
 
+article img {
+	float: left;
+	border-radius: 2rem;
+	margin: 0 1rem 1rem 0;
+}
+
+article {
+	margin: 2rem 0;
+}
+
+/* footer */
 
 footer {
     padding: 1rem 0 3rem 0;
@@ -88,18 +132,11 @@ footer li {
     display: inline-block;
 }
 
-article img {
-	float: left;
-	border-radius: 2rem;
-	margin: 0 1rem 1rem 0;
-}
-
-article {
-	margin: 2rem 0;
-}
 
 article::after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
+
