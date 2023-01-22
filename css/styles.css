@@ -1,4 +1,11 @@
-@font-face { font-family: NicoBold-Regular; src: url('../fonts/NicoBold-Regular.ttf') }
+@font-face {
+    font-family: 'nicoboldbold';
+    src: url('../fonts/nicobold-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nicobold-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html {
     box-sizing: border-box;
 }
@@ -25,7 +32,7 @@ body {
 	from { opacity: 0; }
 	to   { opacity: 1; }
 }
-.content input {
+input {
 	position: absolute;
 	background-color: transparent;
 	color: transparent;
@@ -53,7 +60,7 @@ header {
 	margin: 18rem 0rem -8rem 0rem;
 } 
 h1, h2, h3, h4, h5, h6 {
-    	font-family: 'NicoBold-Regular', 'Droid Serif', serif;
+    	font-family: 'nicoboldbold', 'Droid Serif', serif;
     	font-weight: normal;
 }
 
