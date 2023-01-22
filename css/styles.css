@@ -12,6 +12,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'nicopaint';
+    src: url('../fonts/nicopaint-regular.woff') format('woff'),
+    	 url('../fonts/nicopaint-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 html {
     box-sizing: border-box;
 }
@@ -19,7 +26,7 @@ html {
     box-sizing: inherit;
 }
 body {
-   	font-family: 'Droid Serif', serif;
+   	font-family: 'nicopaint', 'Droid Serif', serif;
 }
 
 
@@ -43,8 +50,8 @@ input {
 	background-color: transparent;
 	color: transparent;
 	border: transparent;
-	margin: -75px 0rem 0rem -230px;
-	cursor:help;
+	margin: -146px 0rem 0rem 302px;
+
 }
 .abg {
 	min-width: 100%;
@@ -76,9 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 .rightheader h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 	color: #000;
-	text-align: center;
 }
 .rightheader p {
 	margin-top: -2.5rem;
@@ -104,12 +110,11 @@ nav ul {
 	border-top: 2px solid #ffffff73;
 }
 nav a:hover {
-    color: #DA0090;
+    color: #fff;
 }
 nav {
 	background-color: #b0d2dd8f;
 	margin: 28rem 0rem 0rem 0rem;
-	text-shadow: 0px 4px 22px black;
 }
 
 /* main page content */
