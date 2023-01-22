@@ -6,7 +6,17 @@
 	 <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet"> 
 	 <link href="css/styles.css" rel="stylesheet">
 </head>
+<script>
+function playMusic(){
+  var music = new Audio("https://files.catbox.moe/ghwvga.mp3");
+  music.play();
+  }
+</script>
 <body>
+<map name="image-map">
+    <area target="" alt="quack" title="quack" input="" coords="751,409" shape="rect">
+</map>
+
 	<audio autoplay="" loop="">
 		<source src="https://files.catbox.moe/vydzr0.mp3" type="audio/mpeg">
 	</audio>
@@ -20,6 +30,7 @@
 		<header>
 			<div class="rightheader">
 				<h1>404! :(</h1>
+			<input type="button" value="quack!" onclick="playMusic()">
 				<p>it seems the page you're looking for doesn't exist...</p>
 			</div>
 		</header>
