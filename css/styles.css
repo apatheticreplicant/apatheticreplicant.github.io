@@ -27,6 +27,7 @@ html {
 }
 body {
    	font-family: 'nicopaint', 'Droid Serif', serif;
+	background-color:black;
 }
 
 
@@ -165,4 +166,12 @@ article::after {
 	clear: both;
 }
 
+/* mobile view */
+@media all and (max-width: 1080px) {
+.abg > video {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4279px; }
 
+}
