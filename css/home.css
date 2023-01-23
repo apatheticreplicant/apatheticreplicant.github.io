@@ -113,8 +113,7 @@ nav {
 }
 
 .contentleft, .contentright {
-	word-wrap: break-word;
-  	word-break: break-all;
+	word-wrap: normal;	
   	max-width: 100%;
 	padding: 0.5rem
 }
@@ -132,6 +131,7 @@ section {
 	border: 2px #552e64 solid;
 	background-color: #2c1733ab;
 	padding: 0.5rem;
+
 }
 section a:hover {
 	color: black;
