@@ -27,7 +27,7 @@ html {
 }
 body {
    	font-family: 'nicopaint', 'Droid Serif', serif;
-	background-color:black;
+	background-color:#60abd8;
 }
 
 
@@ -35,12 +35,12 @@ body {
 	width: 80%;
 	margin: -1rem auto;
 	background:none;
+	animation: fadein 1s;
 
 }
 
 .content {
 	position:relative;
-	animation: fadein 1s;
 }
 @keyframes fadein {
 	from { opacity: 0; }

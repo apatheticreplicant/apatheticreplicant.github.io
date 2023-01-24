@@ -25,6 +25,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
    	font-family: 'nicopaint', 'Droid Serif', serif;
 	color: #cac9c9;
@@ -36,11 +37,12 @@ body {
   	background: transparent;
   	text-shadow: 3px 3px 10px #ff00f2;
 }
+
 .wrapper {
 	width: 80%;
 	margin: -1rem auto;
 	background:none;
-	animation: fadein 1s;
+
 
 }
 
@@ -58,29 +60,45 @@ body {
 	width: 1920px;
 }
 
-/* header+nav+links */
+/* title+header+nav+links */
 
 h1, h2, h3, h4, h5, h6 {
     	font-family: 'nicoboldbold', 'Droid Serif', serif;
     	font-weight: normal;
+  	color: #DA0090;
+}
+
+.title h1 {
+  	font-size: 2.3rem;
+  	margin-top: 2rem;
+  	margin-bottom: -4px;
+}
+
+.posted, .title a {
+    	font-size: 0.6rem;
+    	color: #89A611;
+	padding: -16px 0px 0px 0px
 }
 
 
-.leftheader, .rightheader {
-	margin: 0 auto;
-	text-align: center;
+
+.title img {
+	float: right;
+	margin: -76px 0 0 0; 
+	border: 2px #552e64 solid;
+	
 }
-.leftheader h1, .rightheader h1 {
-	font-size: 4rem;
-	color: #e89b5d;
+
+.title a sup { 
+	display:none;
+	font-size: 0.5rem;
 }
-.leftheader p, .rightheader p {
-	margin-top: -2.5rem;
-	font-family: 'nicoclean-monospaced';
+.title a:hover sup { 
+	display:contents;
 }
+
 
 a {
-    color: #DA0090;
     text-decoration: none;
 }
 nav a{ 
@@ -107,78 +125,44 @@ nav {
 .content {
 	margin-top: 5rem;
 	position: relative;
-	display: grid;
-	grid-template-columns: minmax(40%, 40%) 20% 40%;
-	grid-gap: 0px;
-}
-
-.contentleft, .contentright {
 	word-wrap: normal;	
   	max-width: 100%;
-	padding: 0.5rem
+	padding: 0.5rem;
+	animation: fadein 1s;
 }
 @keyframes fadein {
 	from { opacity: 0; }
 	to   { opacity: 1; }
 }
-.linksmiddle {
-	text-align: center;
-	margin: 17rem 0rem 0rem 0rem;
-}
 
-
-.contentleft section {
+section {
 	border: 2px #552e64 solid;
 	background-color: #2c1733ab;
 	padding: 0.5rem;
 
 }
-.contentright section {
-	border: 2px #552e64 solid;
-	background-color: #2c1733ab;
-	padding: 0.5rem;
+article {
+	margin: 1rem 8px;
+
 }
-section a:hover {
-	color: black;
+.artimg1, .artimg2 {
+	float:right;
+}
+.artimg2 {
+	border: 2px #552e64 solid;
 }
 
 .exit {
-	
+	margin: 3rem auto;
+}
+.exit a, .exit a:visited {
+	color: #DA0090;
 }
 
-.exit:hover {
-	text-shadow:3px 3px 10px #ff00f2
+.exit a:hover {
+	text-shadow:3px 3px 10px #ff00f2;
+	color: black;
 }
-
-.posted {
-    font-size: 0.6rem;
-    color: #89A611;
-    padding: 0px 0px 0px 10px;
-}
-
-
-
-section img {
-	float: right;
-	margin: -96px -40px 0rem 1px;
-	border: 2px #552e64 solid;
-	
-}
-
-article {
-	margin: 2rem 0;
-
-}
-.contentleft section img {
-	float: left;
-	margin: -96px 8px 0rem -40px; 
-	border: 2px #552e64 solid;
-
-}
-.contentleft section h1 {
-	margin: 22px 0px 0px 114px;
-}
-
 
 /* footer */
 
@@ -203,7 +187,7 @@ footer li {
 }
 
 
-article::after {
+article::after, img::after {
 	content: "";
 	display: table;
 	clear: both;
