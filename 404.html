@@ -6,16 +6,16 @@
 	 <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet"> 
 	 <link href="../css/contact.css" rel="stylesheet">
 </head>
-
-<body>
 <script>
-	function playAudio(url) {
-  	  new Audio(url).play();
-	}
+function playMusic(){
+  var music = new Audio("https://files.catbox.moe/lb7qg7.mp3");
+  music.play();
+  }
 </script>
-<audio autoplay="" loop="">
-	<source src="https://files.catbox.moe/vydzr0.mp3" type="audio/mpeg">
-</audio>
+<body>
+	<audio autoplay="" loop="">
+		<source src="https://files.catbox.moe/vydzr0.mp3" type="audio/mpeg">
+	</audio>
 	<div class="wrapper">
 	<div class="abg">
 		<video autoplay="" muted="" loop="" poster="../img/thumb.png" >  
@@ -24,26 +24,12 @@
 	</div>
 	<div class="content" id="content">
 		<header>
-				<h1>contact</h1>
+			<div class="rightheader">
+				<h1>404! :(</h1>
+			<input type="button" value="quack!" onclick="playMusic()">
+			<p>it seems the page you're looking for doesn't exist...<em>yet!</em></p>
+			</div>
 		</header>
-		<section>
-		<form>
-		<div class="infobox"> 
-		<fieldset class="continf"> 
-			<h1>contact information:</h1>
-				<input type"text" id="name" name="name" placeholder="name" required>
-
-				<input type"email" id="email" name="email" placeholder="email" required>
-				<input type"subject" id="subject" name="subject" placeholder="subject" required>
-		</fieldset>
-		</div>
-		<fieldset>
-			<h1>letter contents:</h1> 
-		<textarea id="comments" placeholder="let your fingers fly free, like the birds.."></textarea>
-<button type="button" title="are you sure?" onclick="playAudio('https://files.catbox.moe/fug9lr.mp3')" title="are you sure?">send mail</button>
-		</fieldset>
-		</section>
-		</form>
 		<nav>
 			<ul>
 				<li><a href="../index.html">home</a></li>
@@ -51,7 +37,9 @@
 				<li><a style="color:666;"href="../contact/index.html">contact</a></li>
 			</ul>
 		</nav>
+		<section>
 
+		</section>
 		<footer>
 			<p>Legal disclaimer, copyright, etc.</p>
 			<ul>
