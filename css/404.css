@@ -1,0 +1,149 @@
+@font-face {
+    	font-family: 'nicoboldbold';
+    	src: url('../fonts/nicobold-regular-webfont.woff') format('woff'),
+	 url('../fonts/nicobold-regular-webfont.woff2') format('woff2');
+    	font-weight: normal;
+	font-style: normal;
+}	
+@font-face {
+    font-family: 'nicoclean-monospaced';
+    src: url('../font/nicoclean-monospaced.woff') format('woff'),
+    	 url('../fonts/nicoclean-monospaced.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'nicopaint';
+    src: url('../fonts/nicopaint-regular.woff') format('woff'),
+    	 url('../fonts/nicopaint-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+/* psuedo */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+::selection {
+	color: white;
+  	background: transparent;
+  	text-shadow: 3px 3px 10px;
+}
+/* page */
+
+body {
+   	font-family: 'nicopaint', 'Droid Serif', serif;
+	background-color:#60abd8;
+
+}
+
+.wrapper {
+	width: 50%;
+	margin: -1rem auto;
+	background:none;
+	animation: fadein 1s;
+
+}
+
+.content {
+	position:relative;
+	margin: 16rem auto;
+
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.abg {
+	min-width: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.abg > video {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1920px;
+}
+
+/* header+nav+links */
+
+h1, h2, h3, h4, h5, h6 {
+    	font-family: 'nicoboldbold', 'Droid Serif', serif;
+    	font-weight: normal;
+}
+
+header {
+	margin: 3rem auto;
+	text-align: center;
+}
+header h1 {
+	font-size: 4rem;
+	color: #000;
+}
+header p {
+	margin-top: -2.5rem;
+	font-family: 'nicoclean-monospaced';
+}
+
+nav a{ 
+	color: black;
+	padding: 0 1rem 0 1rem;
+	text-decoration: none;
+}
+nav ul {
+	justify-content: center;
+	display: flex;
+	list-style-type: none;
+	padding: 0.5rem 0 0.5rem 0;	
+	border: 10px #ffffff73 solid;
+	border-image: url(https://stardewvalley.net/wp-content/uploads/2017/12/menu_border_noshadowtopleft.png) 33 stretch;
+  	border-image-slice: 33;
+	border-image-slice: 33%;
+
+}
+nav a:hover {
+    color: #6a5b5b;
+}
+nav {
+	background-color: #eae0c8;
+	border-radius: 10px;
+}
+
+/* main page content */
+
+
+
+/* footer */
+
+footer {
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
+}
+
+/* mobile view */
+@media all and (max-width: 1080px) {
+.abg > video {
+  	position: fixed;
+  	left: 50%;
+  	transform: translateX(-50%);
+ 	 width: 4279px; } 
+
+}
