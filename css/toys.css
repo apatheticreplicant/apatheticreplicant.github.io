@@ -188,6 +188,9 @@ footer {
     font-size: 0.8rem;
     color: white;
 }
+footer:hover {
+	cursor:crosshair;
+}
 footer ul {
     margin: 0;
     padding: 0;
@@ -199,23 +202,15 @@ footer li {
 
 
 
-/* mobile view */
+/* mobile view 
 @media all and (max-width: 1080px) {
-.abg > video {
-  	position: fixed;
-  	left: 50%;
-  	transform: translateX(-50%);
- 	 width: 4279px; } 
-
 .wrapper {
 		 width: 100%;
 	 }
-	 section h1 {
-		font-size: 3.6rem; 
-	 } 
+
 	 section {
-		 padding: 1rem 14px 150% 30px;
-		 background: rgba(34, 34, 34, 0.78);
+		padding: 1rem 14px 0 30px; 
+		background: rgba(34, 34, 34, 0.78);
 	 } 
  
 }
