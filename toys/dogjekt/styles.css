@@ -1,0 +1,55 @@
+body {
+	background-color: wheat;
+	padding: 0;
+	margin: 0;
+}
+
+/* spinner */
+@keyframes psych {
+	100% {
+		transform: skew(360deg)
+	}
+}
+
+.content {
+        display: flex;
+	align-items: center;
+	justify-content: center;
+        height: 80vh;
+        overflow: hidden;
+}
+.spinner {
+	animation: psych 4s linear infinite;
+	display: none;	
+}
+
+.dogimg {
+	max-height: 600px;
+	border: 2px solid #1c1c1c;
+	display: none;
+}
+
+.header {
+	background-color: #1c1c1c;
+	color: wheat;
+	width: 100%;
+ 	position: fixed;
+  	display: flex;
+  	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	
+
+}
+.add-puppy {
+	background-color: #1c1c1c;
+	font-size: 20px;
+	padding: 5px 20px;
+	color: wheat;
+	border: none;
+	cursor: pointer;
+}
+
+.display {
+	display: block;
+}
