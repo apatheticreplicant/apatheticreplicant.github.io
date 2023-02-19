@@ -53,3 +53,20 @@ body {
 .display {
 	display: block;
 }
+
+button {
+	background-color: #71282c;
+	color: wheat;
+	font-size: 16px;
+	font-style: italic;
+	padding: 5px 20px;
+	border: none;
+	cursor: help;
+}
+#nextdog {
+	margin: 0 auto;
+	border: 2px solid #1c1c1c;
+	cursor: pointer;
+	display: block;
+}
+
