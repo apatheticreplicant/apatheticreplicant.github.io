@@ -1,54 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>//toys</title>
+	<title>apatheticrepli.ca</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet"> 
-	<link href="css/toys.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-	<div class="wrapper">
-	<div class="abg">
-		<video autoplay="" muted="" loop="" poster="img/thumb.png" >  
-			<source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/296870/9125f49bf595d6ec4d3115cd2d1d13c653451a5d.webm" type="video/webm">
-		</video>
-	</div>
-	<div class="content" id="content">
-		<header>
-		<!-- put something here eventually --!>
-		</header>
-	<div class = "scrollcontent">
-
-	<section class="calc">
-		<h1><img src="./img/calcpreview.png" alt="an image of a calculator">js calculator</a></h1>
-		<p>...</p>
-		<p class="enter"><a href="./toys/calculator/calculator.html">>> ENTER</a></p>
+	<header class="site-head" id="top">
+	<section class="posts">
 	</section>
+	</header>
 
-	<section class="gallery">
-		<h1><img src="./img/eyepreview.png" alt="an image of an eye">js gallery</a></h1>
-		<p>...</p>
-		<p class="enter"><a href="./toys/gallery/index.html" target="_blank">>> ENTER</a></p>
-	</section>
 
-	<section class="gallery">
-		<h1><img src="./img/eyepreview.png" alt="an image of a question mark">js gallery: animated</a></h1>
-		<p>...</p>
-		<p class="enter"><a href="./toys/gallery2/index.html">>> ENTER</a></p>
-	</section>
 
-	</div>
+	<div class="content" id="toys">
+		<h1 class="toyheader">toys</h1>
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			
+			<div class="swiper-slide">
+			
+				<section class="game-display">
+					<a href="toys/dogjekt/index.html">
+					<h1>dog viewer</h1>
+					</a>
+					<img src="img/preview_dog.png">
+				</section>
+
+			</div>
+ 		
+			<div class="swiper-slide">
+			
+				<section class="game-display">
+					<a href="toys/calculator/calculator.html">
+					<h1>calculator</h1>
+					</a>
+					<img src="img/preview_calc.png">
+				</section>
+
+			</div>       		
+		
+			<div class="swiper-slide">
+			
+				<section class="game-display">
+					<a href="toys/molegame2/index.html">
+					<h1>mole feeder</h1>
+					</a>
+					<img src="toys/molegame2/images/mole-sad.png">
+				</section>
+
+			</div> 
+
 	
+		</div>
 
-
-		<footer class="drop">
-			<p>Legal disclaimer, copyright, etc.</p>
-		</footer>
+  			<div class="swiper-scrollbar"></div>
 	</div>
 	</div>
 
 <script src="https://unpkg.com/popmotion@8/dist/popmotion.global.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

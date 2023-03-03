@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+/*  background styling */
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	color: wheat;
+	overflow: hidden;
+	cursor: url(images/cursor.png), grabbing;
+ }
+
+ .screen::before, .win::before, cursor::before {
+ 	content: " ";
+  	display: block;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  	z-index: 2;
+  	background-size: 100% 2px, 3px 100%;
+  	pointer-events: none;
+}
+
+/* paused */
+.paused {
+	position: absolute;
+	text-align: center;
+	width: 1920px;
+	height: 1080px;
+	cursor: pointer;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+
+
+}
+button {
+	border: none;
+	color: inherit;
+	background: none;
+}
+/* game content */
+
+
+.screen {
+	background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position-x: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 1920px;
+ 	height: 1080px;
+	filter: grayscale(100%);
+}
+
+.score-box {
+	width: 1660px;
+      	text-align: center;	
+	transform: scale(0.9);
+
+}
+
+.worm-box {
+	overflow: hidden;
+	transition: width 0.5s ease-in-out;
+}
+.worm { 
+	width: 1660px;
+	padding: 0 3rem 0 3rem;
+}
+
+.hole-container { 
+	width: 26%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.hole {
+	background-color:black;
+	border-radius: 50%;
+	width: 267px;
+	height: 267px;
+	box-shadow: -1px 1px 60px;
+}
+
+.mole {
+	position: relative;
+	right: 30px;
+}
+
+.hungry {
+  cursor: url(images/cursor-worm.png), pointer;
+}
+
+
+.win {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.gone {
+  display: none;
+}
+
+.replay {
+	animation: fadein 2s;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+
+}

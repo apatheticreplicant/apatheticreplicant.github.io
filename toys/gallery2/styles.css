@@ -8,21 +8,7 @@ body {
 	margin: 0;
 }
 
-.gallery-img {
-	display: none;
-	max-height: 600px
-}
 
-.active {
-	display: block;
-}
-
-.image-gallery {
-	width:100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 
 .swiper-button-prev, .swiper-button-next {
@@ -42,10 +28,7 @@ a {
 	color: #f77676;
 }
 
-.btn:disabled {
-	background-color: #f77676;
-	cursor: not-allowed;
-}
+
 
 .swiper {
 	width: 75%;

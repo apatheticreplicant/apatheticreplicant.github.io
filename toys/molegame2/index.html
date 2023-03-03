@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>mole fighter !!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="paused" onclick="playSound('https://files.catbox.moe/3hi24s.mp3')">
+		<h1>you've stumbled upon a labour of moles. take care of it before they infest our crops.</h1>
+		<h2 id="loading">click anywhere to play</h1>
+	</div>
+
+	<section class="screen" onclick="playSound('https://files.catbox.moe/5rkfze.mp3')">
+	
+	<div class="hole-container"> 
+	<div id="hole-0" class="hole">
+		<img class="mole hungry" data-index="0" src="images/mole-hungry.png" alt="mole">
+	</div>
+	</div>
+
+	<div class="hole-container"> 
+	<div id="hole-1" class="hole">
+		<img class="mole hungry" data-index="1" src="images/mole-hungry.png" alt="mole">
+	</div>
+	</div>
+	
+	<div class="hole-container"> 
+	<div id="hole-2" class="hole">
+		<img class="mole hungry" data-index="2" src="images/mole-hungry.png" alt="mole">
+	</div>
+	</div>
+	
+	<div class="hole-container"> 
+	<div id="hole-3" class="hole">
+		<img class="mole hungry" data-index="3" src="images/mole-hungry.png" alt="mole">
+	</div>
+	</div>
+	
+	<div class="hole-container"> 
+	<div id="hole-4" class="hole">
+		<img class="mole hungry" data-index="4" src="images/mole-hungry.png" alt="mole ">
+	</div>
+	</div>	
+	
+	<div class="hole-container"> 
+	<div id="hole-5" class="hole">
+		<img class="mole hungry" data-index="5" src="images/mole-hungry.png" alt="mole ">
+	</div>
+	</div>
+	
+	<div class="score-box">
+		<h1 id="scorecounter">score: 0</h1>
+		<div style="width:0%;"class="worm-box">
+		<img class="worm" src="images/worm.png">
+	</div>
+
+	</section>
+	<section class="win gone">
+	
+	<h1>nice one, big guy. you got those moles. you got them. those guys. gone. never coming back. yeah. you got em.</h1>
+	<h3 class="replay gone" style="filter: grayscale(0%); color: red;"><a href="index.html">...right?</a></h2></a>
+	
+	</section>
+	<script src="molegame.js"></script>
+</body>
+</html>
