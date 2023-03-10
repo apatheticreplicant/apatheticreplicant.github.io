@@ -3,6 +3,7 @@ const spinner = document.getElementById("spinner");
 const breedSelect = document.getElementById("pupselect");
 const browseButton = document.getElementById("randomdog");
 const nxtBtn = document.getElementById("nextdog");
+const fact = document.getElementById("dogfact");
 
 async function init() {
 	// fill list
@@ -35,6 +36,7 @@ async function init() {
 		dogimg.classList.remove("display");
 		spinner.classList.add("display");
 		dogimg.src = dogJson.message;
+		dogFacts();
 	}
 	pageStart();
 
@@ -71,16 +73,22 @@ async function init() {
 
 	async function handleBreedBrowse() {
 		const breed = breedSelect.value;
-
 		dogimg.classList.remove("display");
 		spinner.classList.add("display");
-
 		const dog = await fetch(
 			`https://dog.ceo/api/breed/${breed}/images/random`
 		);
 		const dogJson = await dog.json();
-
 		dogimg.src = dogJson.message;
+		dogFacts();
 	}
 }
 init();
+
+async function dogFacts() {
+		const dogFact = await fetch(`https://dogapi.dog/api/v2/facts`);
+		const dogFactJson = await dogFact.json();
+		fact.innerHTML = `Dog Fact: ${dogFactJson.data[0].attributes.body}`;
+
+}
+

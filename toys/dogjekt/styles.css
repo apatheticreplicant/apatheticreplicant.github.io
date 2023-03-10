@@ -70,3 +70,10 @@ button {
 	display: block;
 }
 
+.dogfact {
+	text-align: center;
+	margin-top: 0%;
+	padding: 8px;
+	font-style: italic;
+
+}
